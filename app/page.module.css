@@ -1,0 +1,68 @@
+.mainCont {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  max-width: 1500px;
+  z-index: 0;
+}
+
+/* NAVBAR */
+
+.navMenu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  bottom: 70px;
+  animation: fadeIn 1s ease-in-out 1s both;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.navItem {
+  padding: 12px;
+  margin-left: 12px;
+  background-color: var(--navbar);
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.glasscard {
+  padding: 12px 12px 12px 0px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  background: rgba(165, 165, 165, 0.3);
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  transform: translateZ(0);
+  @media (prefers-color-scheme: dark) {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: rgba(105, 105, 105, 0.1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
