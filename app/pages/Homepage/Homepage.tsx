@@ -8,38 +8,30 @@ export default function Homepage() {
         <div className={s.textCont}>
           <div>
             <div className={s.textSection}>
-              {"I'm"} <strong className={s.bold}>Fabian Lioner</strong>
-            </div>
-
-            <Carousel />
-          </div>
-
-          <div className={s.iconText}>
-            <div>
-              I work as a sysadmin, managing cutting edge AI HPC infrastructure.
-            </div>
-            <div className={s.follow}> Follow Me:</div>
-            <div className={s.icons}>
-              <img className={s.icon} src={"/photos/icons/linkedin.png"} />
-              <img className={s.icon} src={"/photos/icons/instagram.png"} />
-              <img className={s.icon} src={"/photos/icons/github.png"} />
-              <img className={s.icon} src={"/photos/icons/share.png"} />
+              <strong className={s.luma}>LUMA</strong>
+              <strong className={s.bylioner}>byLioner</strong>
             </div>
           </div>
-        </div>
-        <div className={s.imgCont}>
-          <img className={s.photo} src={"/photos/pfp.webp"} />
         </div>
       </div>
       <div className={s.bgCont}>
         <div className={s.bg} />
-        <div className={s.dots2} />
       </div>
     </div>
   );
 }
 
 /* 
+
+      <div className={s.glasscard}>
+            <div className={s.button}>ver productos</div>
+          </div>
+
+     <div className={s.bgCont}>
+        <div className={s.bg} />
+        <div className={s.dots2} />
+      </div>
+
 
            <Swiper
               loop={true}

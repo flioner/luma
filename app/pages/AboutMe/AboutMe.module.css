@@ -1,5 +1,7 @@
 .main {
   position: relative;
+  max-width: 2200px;
+  width: 100%;
 }
 .separator {
   width: 100%;
@@ -39,34 +41,13 @@
       transparent
     );
   }
-
-  @media (prefers-color-scheme: dark) {
-    background: rgba(10, 10, 10, 1);
-    @media (min-width: 1500px) {
-      border: 5px solid var(--separator);
-
-      -webkit-mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 5%,
-        black 95%,
-        transparent
-      );
-      mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 5%,
-        black 95%,
-        transparent
-      );
-    }
-  }
 }
 
 .aboutMe {
+  width: 100%;
   font-size: var(--XL);
   font-weight: bold;
-  background: linear-gradient(-20deg, rgb(233, 190, 126), rgb(73, 34, 11));
+  background: linear-gradient(-20deg, rgb(185, 185, 185), rgb(0, 0, 0));
   background-position: fixed;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,13 +55,9 @@
 
 .img {
   height: 175px;
-  width: auto;
-  border-radius: 50%;
+  width: 175px;
   padding: 3px;
-  background: linear-gradient(-20deg, rgb(233, 190, 126), rgb(255, 255, 255));
-  @media (prefers-color-scheme: dark) {
-    background: linear-gradient(-20deg, rgb(233, 190, 126), rgb(73, 34, 11));
-  }
+  border-radius: 50%;
 }
 
 .card {

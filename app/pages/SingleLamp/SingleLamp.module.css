@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  opacity: 1;
+  filter: contrast(0.8) brightness(1.15);
+  position: absolute;
+  min-width: 1000px;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  left: -210px;
+}
+
+.txtCont {
+  @media (max-width: 700px) {
+    width: 100%;
+    padding-left: 50%;
+    padding-right: 5%;
+  }
+}
+
+.title {
+  font-size: var(--XL);
+  font-weight: bold;
+  background: linear-gradient(-70deg, rgb(117, 117, 117), rgb(0, 0, 0));
+  background-position: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.txt {
+  font-size: var(--S);
+}

@@ -1,20 +1,22 @@
 import s from "./AboutMe.module.css";
 
 const text = `
-I am a Developer and SysAdmin at Oracle where I troubleshoot and manage AI GPU servers while supporting high performance,
- reliable infrastructure. My strengths include strong problem solving skills and deep experience with Linux systems, and 
- I enjoy engaging work that challenges me technically and creatively. I contributed to the planning and development of 
- a tool that is now used nationwide, and experiences like that drive me to keep pursuing projects that create real,
-  meaningful impact.
+
+Luma byLioner nace del interés por el diseño y la tecnología, con una idea clara:
+ crear lámparas que no podrían existir mediante métodos de manufactura convencionales.
+  Es un proyecto independiente donde cada diseño se desarrolla y ensambla en casa, 
+  con más de 24 horas dedicadas a cada pieza. A través de un empaque ecológico y reciclable,
+   y el compromiso de trabajar con materiales 100% reciclados para 2027, buscamos que cada lámpara
+    tenga también un impacto positivo en el ambiente.
 `;
 
 export default function AboutMe() {
   return (
     <main className={s.main}>
       <div className={s.separator}>
-        <img className={s.img} src="/photos/pfp3.webp" />
+        <img className={s.img} src="/photos/lamp.jpg" />
 
-        <div className={s.aboutMe}>About Me</div>
+        <div className={s.aboutMe}>Acerca de Nosotros</div>
         {text}
 
         <div className={s.bg} />

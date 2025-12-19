@@ -1,27 +1,28 @@
-import Homepage from "./pages/Homepage/Homepage";
 import s from "./page.module.css";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import Experience from "./pages/Experience/Experience";
-import Education from "./pages/Education/Education";
+import Homepage from "./pages/Homepage/Homepage";
+import SingleLamp from "./pages/SingleLamp/SingleLamp";
 
 export default function Home() {
   return (
     <div className={s.mainCont}>
-      {/* NAVIGATION */}
-      <div className={s.navMenu}>
-        <div className={s.glasscard}>
-          <div className={s.navItem}>About Me</div>
-
-          <div className={s.navItem}>Experience</div>
-
-          <div className={s.navItem}>Education</div>
-        </div>
-      </div>
-
       <Homepage />
+
+      <SingleLamp />
       <AboutMe />
-      <Experience />
-      <Education />
     </div>
   );
 }
+
+/* 
+
+ 
+      <div className={s.navMenu}>
+        <div className={s.glasscard}>
+          <div className={s.navItem}>Nosotros</div>
+
+          <div className={s.navItem}>Productos</div>
+        </div>
+      </div>
+
+*/
